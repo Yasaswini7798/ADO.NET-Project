@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F63AC14A-076F-49BE-B7CD-CC99E50B8D1E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ADONETPROJ</RootNamespace>
+    <AssemblyName>ADONETPROJ</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB1_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB1_Details.Designer.cs">
+      <DependentUpon>DB1_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBdetails.Designer.cs">
+      <DependentUpon>DBdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete.Designer.cs">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteData.Designer.cs">
+      <DependentUpon>DeleteData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Details.Designer.cs">
+      <DependentUpon>Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertData.Designer.cs">
+      <DependentUpon>InsertData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insertstaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertstaff.Designer.cs">
+      <DependentUpon>Insertstaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Staff.cs" />
+    <Compile Include="Model\Stafflogic.cs" />
+    <Compile Include="Model\Student.cs" />
+    <Compile Include="Model\Studentlogic.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Searchpercent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Searchpercent.Designer.cs">
+      <DependentUpon>Searchpercent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchStaff.Designer.cs">
+      <DependentUpon>SearchStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffDetails.Designer.cs">
+      <DependentUpon>StaffDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENT_MGMTDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STUDENT_MGMTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENT_MGMTDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STUDENT_MGMTDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateData.Designer.cs">
+      <DependentUpon>UpdateData.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DB1_Details.resx">
+      <DependentUpon>DB1_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBdetails.resx">
+      <DependentUpon>DBdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteData.resx">
+      <DependentUpon>DeleteData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details.resx">
+      <DependentUpon>Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertData.resx">
+      <DependentUpon>InsertData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertstaff.resx">
+      <DependentUpon>Insertstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Searchpercent.resx">
+      <DependentUpon>Searchpercent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchStaff.resx">
+      <DependentUpon>SearchStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffDetails.resx">
+      <DependentUpon>StaffDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateData.resx">
+      <DependentUpon>UpdateData.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="STUDENT_MGMTDataSet.xsc">
+      <DependentUpon>STUDENT_MGMTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="STUDENT_MGMTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>STUDENT_MGMTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="STUDENT_MGMTDataSet.xss">
+      <DependentUpon>STUDENT_MGMTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="STUDENT_MGMTDataSet1.xsc">
+      <DependentUpon>STUDENT_MGMTDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="STUDENT_MGMTDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>STUDENT_MGMTDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="STUDENT_MGMTDataSet1.xss">
+      <DependentUpon>STUDENT_MGMTDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
